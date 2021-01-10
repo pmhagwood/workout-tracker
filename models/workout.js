@@ -56,7 +56,7 @@ workoutSchema
     for(var i=0; i < this.exercises.length; i++){
         totalDuration = totalDuration + this.exercises[i].duration;
     }
-  return totalDuration;
+  return totalDuration; 
 });
 
 const Workout = mongoose.model("Workout", workoutSchema);
