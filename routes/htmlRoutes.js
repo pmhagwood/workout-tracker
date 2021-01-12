@@ -8,7 +8,7 @@ module.exports = function(app) {
   app.get("/", function(req, res){
     res.sendFile(path.join(__dirname, "../public/index.html"));
   })
-  // Called when "Countinue Workout" or "new Workout" is clicked in index.html
+  // Called when "Countinue Workout" or "new Workout" is clicked in index.html and user sends info.
   app.get("/exercise", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
